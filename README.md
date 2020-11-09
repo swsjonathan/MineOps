@@ -1,2 +1,7 @@
 # MineOps
- Initialisation Files for ISP CTF 2020
+CTF website for ISP Project 2020
+
+# Architecture
+- Flask
+- Boostrap 4
+
