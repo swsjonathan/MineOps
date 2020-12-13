@@ -1,12 +1,12 @@
 version: '3'
 services:
         jenkins:
-                image: jenkins/jenkins:lts
+                build: ./jenkins-build
                 ports:
                         - "8080:8080"
                         - "50000:50000"
                 volumes:
-                        - /root/jenkins_home:/var/jenkins_home
+                        - /home/azureuser/MineOps/jenkins_home:/var/jenkins_home
                 privileged: true
         webapp:
                 build: ./ctf-flask
